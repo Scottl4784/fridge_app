@@ -1,0 +1,10 @@
+<h1>Fridgies</h1>
+<ul>
+  <% @fridges.each do |fridge| %>
+    <li>
+      <a href="/fridges/<%= fridge.id %>">
+        <%= fridge.location %>
+      </a>
+    </li>
+  <% end %>
+</ul> 
